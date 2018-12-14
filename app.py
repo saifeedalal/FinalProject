@@ -14,8 +14,8 @@ app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://washu:WashuData1@ds245523.mlab.com:45523/dataanalytics"
 mongo = PyMongo(app)
 
-with open('final_model.pkl', 'rb') as fh:
-    loaded_model = joblib.load(fh)
+# with open('final_model.pkl', 'rb') as fh:
+#     loaded_model = joblib.load(fh)
 
 
 @app.route("/")
@@ -98,7 +98,7 @@ def getModelOutput(airline,month,calendarDay,weekDay,hour):
 
     # X_test = pd.DataFrame(d.items(), columns = ['airline','month','calendarDay','weekDay','hour'])
     X_test = pd.DataFrame(d, index=[0])
-    # loaded_model = joblib.load("final_model.pkl")
+    loaded_model = joblib.load("final_model.pkl")
     result = loaded_model.predict(X_test)
     print(result)
     return result[0]
