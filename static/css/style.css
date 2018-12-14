@@ -71,6 +71,10 @@ h5 {
 
 }
 
+.alert{
+  color:red;
+}
+
 #result_placeholder{
   align-content: center;
 }
