@@ -5,6 +5,8 @@
 var alert_message_keyword = "Please enter keyword!"
 var alert_message_result = "No tweets found for this keyword!"
 
+getTweets("Flight");
+
 var search_btn = d3.select("#search-btn");
 var tweetsTable = d3.select("tbody");
 
@@ -78,7 +80,6 @@ function getTweets(searchKeyword){
 
         // if (mentions != null)
         //   mentions = mentions.substring(0,mentions.length-1);
-
         var row;
         var cell;
         row = tweetsTable.append("tr");
