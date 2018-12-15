@@ -56,17 +56,17 @@ function submitFeedback(email_id,feedback){
   d3.json(url,function(data) {
     console.log("Returned Response", data);
    
-    if (data != null && data.length > 0){
+    // if (data != null && data.length > 0){
       
-      //document.getElementById("tablehead").classList.remove('invisible');
-      d3.select("#tablehead")
-        .classed("invisible", false); 
+    //   //document.getElementById("tablehead").classList.remove('invisible');
+    //   d3.select("#tablehead")
+    //     .classed("invisible", false); 
 
-    }
+    // }
 
-    else
-    // $('#alert_placeholder').html('<div class="alert"><a class="close" data-dismiss="alert">×</a><span>'+alert_message_result+'</span></div>');
-    console.log("Returned Response is null");
+    // else
+    // // $('#alert_placeholder').html('<div class="alert"><a class="close" data-dismiss="alert">×</a><span>'+alert_message_result+'</span></div>');
+    // console.log("Returned Response is null");
 
   });
 

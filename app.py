@@ -4,9 +4,6 @@ from twitter import *
 from flask import Flask, jsonify, render_template, request, redirect
 from flask_pymongo import PyMongo
 import datetime
-import pickle
-from sklearn.externals import joblib
-import pandas as pd
 
 app = Flask(__name__)
 
@@ -86,18 +83,9 @@ def getTweets(searchKeyword):
     print(response)
     return jsonify(response)
 
-
-
 def getModelOutput(airline,month,calendarDay,weekDay,hour):
-
-    d = {'airline':airline,'month':month,'calendarDay':calendarDay,'weekDay':weekDay,'hour':hour}
-
-    # X_test = pd.DataFrame(d.items(), columns = ['airline','month','calendarDay','weekDay','hour'])
-    X_test = pd.DataFrame(d, index=[0])
-    loaded_model = joblib.load("final_model.pkl")
-    result = loaded_model.predict(X_test)
-    print(result)
-    return result[0]
+    response = 0
+    return response
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -71,6 +71,10 @@ h5 {
 
 }
 
+.alert{
+  color:red;
+}
+
 #result_placeholder{
   align-content: center;
 }
@@ -167,7 +171,6 @@ p {
     #table-area tr td:first-child {
       font-size: 1.8em;
       font-weight: bold;
-      background: #1b3146;
       border-color: black;
     }
   
@@ -196,6 +199,7 @@ p {
       text-align: center;
       border-color: black;
     }
+
   
     #table-area tbody td::before {
       display: block;
@@ -207,9 +211,16 @@ p {
     }
 
     #bg-image{
-      height: 75px;
-      width: 250px;
+      height: 100px;
+      width: 400px;
     }
+
+    #result_placeholder
+    {
+      height: 100px;
+      width: 400px;
+    }
+    
   }    
   
   #plane_img{
