@@ -66,7 +66,7 @@ submit_btn.on("click", function() {
         var hour = 0;
 
         if (time == "Early Morning (00:00 - 06:59 CST)")
-          hour = 600;
+          hour = 0600;
         else if (time == "Morning (07:00 - 11:59 CST)")
           hour = 1100;
         else if (time == "Afternoon (12:00 - 15:59 CST)")

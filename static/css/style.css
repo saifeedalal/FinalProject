@@ -71,10 +71,6 @@ h5 {
 
 }
 
-.alert{
-  color:red;
-}
-
 #result_placeholder{
   align-content: center;
 }
@@ -157,8 +153,8 @@ p {
     }
 
     #bg-image{
-      height: 200px;
-      width: 750px;
+      height: 150px;
+      width: 500px;
     }
     
   }
@@ -171,6 +167,7 @@ p {
     #table-area tr td:first-child {
       font-size: 1.8em;
       font-weight: bold;
+      background: #1b3146;
       border-color: black;
     }
   
@@ -199,7 +196,6 @@ p {
       text-align: center;
       border-color: black;
     }
-
   
     #table-area tbody td::before {
       display: block;
@@ -210,17 +206,10 @@ p {
       border-color: black;
     }
 
-    #bg-image img{
-      height: 100px;
-      width: 400px;
+    #bg-image{
+      height: 75px;
+      width: 250px;
     }
-
-    #result_placeholder
-    {
-      height: 100px;
-      width: 400px;
-    }
-    
   }    
   
   #plane_img{

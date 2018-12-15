@@ -20,8 +20,4 @@ twitter==1.18.0
 Werkzeug==0.14.1
 gunicorn==19.9.0
 scikit-learn==0.19.1
-<<<<<<< HEAD
 scipy
-=======
-scipy==1.1.0
->>>>>>> fd9ae427f83168897cba5ecbf3478a37464d3b5b
